@@ -53,7 +53,7 @@ ul
 	width: 100%
 	margin: auto
 	overflow: hidden
-	background: url("../img/top_bg.png") repeat-x left top
+	background: #c8e2f1 url("../img/top_bg.png") repeat-x left top
 
 .w_1200
 	max-width: 1200px
@@ -117,7 +117,7 @@ b, strong
 	a 
 		color: #505050
 		display: block
-		font-family: OpenSans
+		font-family: OpenSansSB
 		font-size: 15px
 		padding: 10px 38px 13px 38px
 		line-height: 1
@@ -269,7 +269,7 @@ li.active
   overflow: hidden
   
 .top_slider_wrap
-	margin-bottom: 30px
+	//margin-bottom: 30px
 
 .slides
   height: 100% 
@@ -364,42 +364,107 @@ li.active
 	padding-bottom: 0
 
 .left_mnu 
-	margin-bottom: 20px
+	margin-bottom: 15px
 	box-sizing: border-box
 	padding: 0
-	.like_h2
-		font-family: MuseoSansCyrl900
-		color: white
-		padding: 20px
-		font-size: 18px
-	li
-		float: left
-		width: 230px
-		padding-right: 50px
-		display: block
-		line-height: 1.2
-		box-sizing: border-box
-		padding-left: 10px
-		background: url("../img/arr_li.png") no-repeat left 0 top 6px
-		margin-bottom: 15px
-		&:nth-child(3n) 
-			padding-right: 0
-		
+	width: 270px
+	border-radius:  4px
+	background-color: #0d2f48
+	background-image: linear-gradient(to top, #215b8b 0%, #0d2f48 100%)
+	border-radius: 10px
+	box-shadow: 0 2px 9px #002b4d
+	position: relative
+	padding-top: 60px
+	padding-bottom: 23px
+	overflow: hidden
+	.like_h3 
+		background-color: white
+		background-image: linear-gradient(to top, #d5e2e8 0%, #fafefd 100%)
+		color: #323232
+		font-family: OpenSansB
+		font-size: 16px
+		text-align: center
+		padding: 15px 18px
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+	li 
+		padding: 0 20px	
+		margin-bottom: 10px
+		&:last-child 
+			margin-bottom: 0		
 	a 
-		color: white
-		font-family: MuseoSansCyrl500
-		font-size: 15px
-		line-height: 30px
+		color: #d7edff
+		font-family: RobotoB 
+		font-size: 14px
 		box-sizing: border-box
-		line-height: 1
-	
+		line-height: 1.7
+		padding-left: 40px
+		display: block
+		min-height: 25px
+		background-repeat: no-repeat
+		background-position: left center 	
 		&:hover 
 			text-decoration: underline 
+			
+.item1 
+	a
+		background-image: url("../img/item1.png") 
+
+.item2 
+	a
+		background-image: url("../img/item2.png")
+
+.item3
+	a
+		background-image: url("../img/item3.png")
+
+.item4
+	a
+		background-image: url("../img/item4.png")
+
+.item5
+	a
+		background-image: url("../img/item5.png")
+
+.item6
+	a
+		background-image: url("../img/item6.png")
+
+.item7
+	a
+		background-image: url("../img/item7.png")
+		
+.item8
+	a
+		background-image: url("../img/item8.png")
+
+.item9
+	a
+		background-image: url("../img/item9.png")
+
+.item10
+	a
+		background-image: url("../img/item10.png")
+		
+.item11 
+	a
+		background-image: url("../img/item11.png")
+
+.item12 
+	a
+		background-image: url("../img/item12.png")
+		
+.item13 
+	a
+		background-image: url("../img/item13.png")
+
 
 .main_content 
 	padding-bottom: 30px
 	overflow: hidden
-	padding-top: 40px
+	padding-top: 30px
 		
 .content 
 	float: right
@@ -422,29 +487,17 @@ h1
 	font-size: 36px
 	margin-bottom: 20px
 	line-height: 1
-	display: block
-	height: 100px
-	background: url("../img/glass_1.png") no-repeat left top
-	padding: 20px 0 0 20px 
 .content
 	h2
 		color: rgb(47, 47, 47)
 		font-family: MuseoSansCyrl700
 		font-size: 30px
 		margin-bottom: 20px
-		display: block
-		min-height: 83px
-		padding: 15px 0 0 20px
-		background: url("../img/glass_2.png") no-repeat left top
 	h3
 		color: rgb(47, 47, 47)
 		font-family: MuseoSansCyrl700
 		font-size: 24px
 		margin-bottom: 20px
-		display: block
-		min-height: 59px
-		padding: 10px 0 0 20px
-		background: url("../img/glass_3.png") no-repeat left top
 
 .orange_left 
 	border-left: 4px solid rgb(255, 102, 0)
@@ -547,62 +600,84 @@ h1
 			text-decoration: none
 	
 .left_form
-	width: 230px
+	width: 270px
 	background-color: #fff
 	box-sizing: border-box
-	padding: 20px 10px 10px
+	padding: 60px 30px 30px
 	position: relative
+	background-color: #fff
+	border-radius: 10px
+	overflow: hidden
+	box-shadow: 0 2px 9px #002b4d
 	.like_h3 
-		color: #000
-		font-family: MuseoSansCyrl700
-		font-size: 24px
-		margin-bottom: 20px
+		background-color: white
+		background-image: linear-gradient(to top, #d5e2e8 0%, #fafefd 100%)
+		color: #323232
+		font-family: OpenSansB
+		font-size: 16px
 		text-align: center
+		padding: 15px 18px
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
 		
 	input 
 		box-sizing: border-box
-		height: 39px
+		height: 45px
 		width: 100%
 		background-color: white
 		border: none
-		padding: 0 10px
+		padding: 0 20px
 		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl300
+		font-family: OpenSans
+		font-size: 14px
 		font-size: 15px
-		margin-bottom: 10px
-		border: 3px solid rgb(218, 227, 230)
+		margin-bottom: 15px
+		border: 2px solid #215b8a
+		border-radius: 4px
 	
 	textarea 
 		box-sizing: border-box
 		width: 100%
-		height: 89px
+		height: 105px
 		background-color: white
 		border: none
-		padding: 10px
+		padding: 20px
 		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl300
-		font-size: 15px
-		margin-bottom: 10px
-		border: 3px solid rgb(218, 227, 230)
+		font-family: OpenSans
+		font-size: 14px
+		margin-bottom: 15px
+		border: 2px solid #215b8a
+		border-radius: 4px
 	
 	button 
+		height: 45px
 		width: 100%
-		height: 39px
-		background-color: rgb(255, 102, 0)
-		border: none
-		text-align: center
+		background-color: white
+		background-image: linear-gradient(to top, #215b8b 0%, #0d2f48 100%)
+		border-radius: 4px
+		box-shadow: 0 2px 9px #002b4d
 		box-sizing: border-box
+		border: none
+		font-size: 16px
+		font-family: OpenSansB
 		color: #fff
-		font-family: MuseoSansCyrl700
-		font-size: 15px
-		line-height: 18px
-		text-transform: uppercase
-		
+		text-align: center
+
 .left_widget_vk 
-	width: 230px
+	width: 270px
 	text-align: center
 	margin-top: 30px
 	margin-bottom: 20px
+	border-radius: 10px
+	box-shadow: 0 2px 9px #002b4d
+	overflow: hidden
+	background-color: #FFF 
+	padding: 0
+	img 
+		width: 100%
+	
 
 .left_news 
 	.like_h3
