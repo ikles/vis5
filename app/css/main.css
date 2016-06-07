@@ -197,7 +197,9 @@ b, strong {
     .top_mnu li:first-child {
       margin-left: 0; }
       .top_mnu li:first-child a {
-        background: url("../img/active_menu_arr.jpg") no-repeat right top, url("../img/top_menu_bg_ac.jpg") repeat-x left 21px top 0 !important; }
+        background-image: none; }
+        .top_mnu li:first-child a:hover {
+          background: url("../img/active_menu_arr.jpg") no-repeat right top, url("../img/top_menu_bg_ac.jpg") repeat-x left 21px top 0 !important; }
     .top_mnu li:last-child a {
       background-image: none; }
       .top_mnu li:last-child a:hover {
@@ -222,9 +224,15 @@ b, strong {
 
 li.active a {
   text-decoration: none;
-  color: #000;
-  background: url("../img/active_menu_arr.jpg") no-repeat right top, url("../img/menu_arr2.jpg") no-repeat left 0 top 0, url("../img/top_menu_bg_ac.jpg") repeat-x left 21px top 0;
+  color: #000 !important;
+  background: url("../img/active_menu_arr.jpg") no-repeat right top, url("../img/menu_arr2.jpg") no-repeat left 0 top 0, url("../img/top_menu_bg_ac.jpg") repeat-x left 21px top 0 !important;
   z-index: 300; }
+
+li.active:last-child a {
+  background: url("../img/menu_arr2.jpg") no-repeat left 0 top 0, url("../img/top_menu_bg_ac.jpg") repeat-x left 21px top 0 !important; }
+
+li.active:first-child a {
+  background: url("../img/active_menu_arr.jpg") no-repeat right top, url("../img/top_menu_bg_ac.jpg") repeat-x left 21px top 0 !important; }
 
 .right_none {
   background: url("../img/menu_arr2.jpg") no-repeat left 0 top 0, url("../img/top_menu_bg_ac.jpg") repeat-x left 21px top 0 !important; }
