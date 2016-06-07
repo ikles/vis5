@@ -134,11 +134,15 @@ ul {
   font-family: MuseoSansCyrl300I;
   src: url(../fonts/MuseoSansCyrl_300_Italic.otf); }
 
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Semibold.ttf); }
+
 .wrapper {
   width: 100%;
   margin: auto;
   overflow: hidden;
-  background-color: #DAE3E6; }
+  background: url("../img/top_bg.png") repeat-x left top; }
 
 .w_1200 {
   max-width: 1200px;
@@ -151,7 +155,6 @@ b, strong {
   font-family: MuseoSansCyrl700; }
 
 .top {
-  background-color: #f5f5f5;
   position: relative; }
 
 .top, .top .w_1200 {
@@ -161,72 +164,83 @@ b, strong {
   position: relative; }
 
 .logo {
-  display: block;
-  position: absolute;
-  left: 15px;
-  top: 0;
   z-index: 100; }
 
 .col-mnu {
-  margin-top: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+.col-top {
+  padding-top: 10px !important;
+  margin-bottom: 25px; }
 
 .top_mnu {
   float: left;
   position: relative;
-  z-index: 1; }
+  margin-left: 23px;
+  margin-top: 2px; }
   .top_mnu ul {
-    display: block;
-    text-align: center;
-    margin: 0; }
+    margin: 0;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 1px 1px #001d4c;
+            box-shadow: 0 1px 1px #001d4c;
+    overflow: hidden;
+    height: 38px;
+    background: url("../img/top_menu_bg.jpg") repeat-x 0 0; }
   .top_mnu li {
-    display: inline-block;
+    float: left;
     list-style: none;
     line-height: 1;
-    margin: 0 25px; }
-    .top_mnu li:first-child {
-      margin-left: 20px; }
-    .top_mnu li:last-child {
-      margin-right: 20px; }
+    position: relative;
+    margin-left: -22px; }
+    .top_mnu li:last-child a {
+      background-image: none; }
+      .top_mnu li:last-child a:hover {
+        background: url("../img/menu_arr2.jpg") no-repeat left 0 top 0, url("../img/top_menu_bg_ac.jpg") repeat-x left 21px top 0; }
   .top_mnu a {
-    color: #373737;
+    color: #505050;
     display: block;
-    font-family: MuseoSansCyrl700;
-    font-size: 14px;
-    padding: 13px 0;
+    font-family: OpenSans;
+    font-size: 15px;
+    padding: 10px 28px 13px 28px;
     line-height: 1;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+            box-sizing: border-box;
+    background: url("../img/menu_arr.jpg") no-repeat right top;
+    position: relative;
+    z-index: 200; }
     .top_mnu a:hover {
       text-decoration: none;
-      color: #ff6600; }
+      color: #000;
+      background: url("../img/active_menu_arr.jpg") no-repeat right top, url("../img/menu_arr2.jpg") no-repeat left 0 top 0, url("../img/top_menu_bg_ac.jpg") repeat-x left 21px top 0; }
 
-.active a {
+li.active a {
   text-decoration: none;
-  color: #ff6600; }
+  color: #000;
+  background: url("../img/active_menu_arr.jpg") no-repeat right top, url("../img/menu_arr2.jpg") no-repeat left 0 top 0, url("../img/top_menu_bg_ac.jpg") repeat-x left 21px top 0; }
 
 .top_contacts {
   color: #000;
   margin-top: 25px; }
 
 .top_phone {
-  color: #000;
+  color: lightgrey;
   font-family: MuseoSansCyrl700;
   font-size: 18px;
   text-transform: uppercase;
   background: url("../img/top_icon_phone.png") no-repeat left center;
   padding-left: 22px;
   float: left;
-  margin-right: 75px; }
+  margin-left: 0; }
 
 .top_mail {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   float: left;
-  margin-right: 75px; }
+  margin-left: 23px; }
   .top_mail a {
-    color: #000;
+    color: lightgrey;
     font-family: MuseoSansCyrl700;
     font-size: 14px;
     text-decoration: underline;
@@ -235,7 +249,8 @@ b, strong {
     padding-left: 22px; }
 
 .top_adress {
-  float: left;
+  color: lightgrey;
+  float: right;
   background: url("../img/top_icon_adress.png") no-repeat left center;
   padding-left: 22px;
   font-family: MuseoSansCyrl500;
