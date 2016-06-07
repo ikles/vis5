@@ -471,7 +471,7 @@ li.active:first-child a {
   padding-bottom: 0; }
 
 .left_mnu {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
@@ -498,7 +498,7 @@ li.active:first-child a {
     color: #323232;
     font-family: OpenSansB;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     padding: 15px 18px;
     position: absolute;
     top: 0;
@@ -580,14 +580,23 @@ li.active:first-child a {
     .content p:last-child {
       margin-bottom: 0; }
 
+.white_content {
+  background-color: #FFF;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 .banner {
   margin-bottom: 25px; }
 
 h1 {
   color: #2f2f2f;
-  font-family: MuseoSansCyrl700;
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-family: OpenSans;
+  font-size: 30px;
+  margin-bottom: 25px;
   line-height: 1; }
 
 .content h2 {
@@ -623,25 +632,47 @@ h1 {
 .price_table {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  overflow: hidden; }
   .price_table td {
     padding: 10px 15px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     vertical-align: middle;
-    border-bottom: 1px solid #BDBDBD; }
+    border-bottom: 1px solid #BDBDBD;
+    background-color: #FFF; }
   .price_table tr:first-child {
-    color: #fff;
-    font-family: MuseoSansCyrl900;
-    font-size: 15px; }
+    -webkit-border-radius: 10px 10px 0 0;
+            border-radius: 10px 10px 0 0;
+    overflow: hidden; }
     .price_table tr:first-child td {
-      background-color: #6b6b6b;
-      padding: 15px; }
+      background-color: #f8f8f8;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#d5e2e8), to(#fafefd));
+      background-image: -webkit-linear-gradient(bottom, #d5e2e8 0%, #fafefd 100%);
+      background-image: linear-gradient(to top, #d5e2e8 0%, #fafefd 100%);
+      color: #2f2f2f;
+      font-family: OpenSansB;
+      font-size: 17px;
+      padding: 25px 15px;
+      border-bottom: none; }
+  .price_table tr:last-child td {
+    border-bottom: none;
+    padding-bottom: 15px; }
   .price_table td {
     padding: 10px 15px;
     font-size: 15px;
     line-height: 1;
     font-family: MuseoSansCyrl500; }
+    .price_table td:first-child, .price_table td:nth-child(3) {
+      font-family: OpenSansB;
+      font-size: 15px;
+      color: #164265; }
+    .price_table td:nth-child(2) {
+      font-family: OpenSans;
+      font-size: 15px;
+      color: #2f2f2f; }
   .price_table tbody tr {
     color: #2f2f2f;
     font-family: MuseoSansCyrl500;
@@ -660,31 +691,39 @@ h1 {
 .price_table.inner_table td:nth-child(3n) {
   color: #ff6600; }
 
-.last_news {
+.content .last_news {
   margin-top: 45px; }
-  .last_news .like_h3 {
+  .content .last_news .like_h3 {
     color: #2f2f2f;
-    font-family: MuseoSansCyrl900;
-    font-size: 18px;
+    font-family: OpenSans;
+    font-size: 30px;
+    margin-bottom: 23px; }
+  .content .last_news li {
+    background: none;
+    padding-left: 0;
     margin-bottom: 30px; }
-  .last_news a {
+  .content .last_news a {
     display: block;
     float: left;
-    margin-bottom: 25px;
-    color: black;
-    font-family: MuseoSansCyrl300;
-    font-size: 15px;
+    margin-bottom: 12px;
+    color: #1f5785;
+    font-family: OpenSansSB;
+    font-size: 16px;
     text-decoration: underline; }
-    .last_news a:hover {
+    .content .last_news a:hover {
       text-decoration: none; }
-  .last_news .all_lnews_link {
+    .content .last_news a p {
+      font-family: OpenSans;
+      font-size: 14px;
+      color: #000; }
+  .content .last_news .all_lnews_link {
     display: block;
     text-align: left;
-    color: #36a6cf;
-    font-family: MuseoSansCyrl700;
-    font-size: 15px;
+    color: #1f5785;
+    font-family: OpenSans;
+    font-size: 14px;
     text-decoration: underline; }
-    .last_news .all_lnews_link:hover {
+    .content .last_news .all_lnews_link:hover {
       text-decoration: none; }
 
 .left_form {
@@ -767,7 +806,7 @@ h1 {
 .left_widget_vk {
   width: 270px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
@@ -812,41 +851,68 @@ h1 {
   float: left; }
 
 .footer {
-  background-color: #fff;
   color: #000;
   overflow: hidden;
-  border-top: 1px solid #F60;
-  padding-bottom: 8px; }
+  padding-bottom: 15px;
+  background: url("../img/footer_bg.png") no-repeat center top; }
+
+.copy {
+  color: #000; }
+  .copy p {
+    font-family: MuseoSansCyrl500;
+    font-size: 12px;
+    margin-bottom: 15px; }
+  .copy li {
+    float: left;
+    margin-right: 10px;
+    line-height: 1.5; }
+  .copy a {
+    color: #000;
+    font-family: MuseoSansCyrl500;
+    font-size: 12px;
+    text-decoration: underline; }
+    .copy a:hover {
+      text-decoration: none; }
+
+.col-soc {
+  font-family: MuseoSansCyrl500;
+  font-size: 12px; }
+  .col-soc div {
+    margin-left: 65px; }
+  .col-soc p {
+    margin-bottom: 15px; }
 
 .footer_adress {
   font-family: MuseoSansCyrl500;
   font-size: 12px;
   padding-left: 20px;
-  background: url("../img/top_icon_adress.png") no-repeat left center;
+  background: url("../img/footer_icon_adress.png") no-repeat left center;
   min-height: 16px;
   line-height: 1.2;
   overflow: hidden;
-  margin-top: 30px; }
+  margin-bottom: 10px; }
 
 .footer_phone {
   font-family: MuseoSansCyrl700;
   font-size: 18px;
   padding-left: 20px;
-  background: url("../img/top_icon_phone.png") no-repeat left center;
-  margin-top: 30px; }
+  background: url("../img/footer_icon_phone.png") no-repeat left center; }
   .footer_phone span {
     font-size: 12px;
     font-family: MuseoSansCyrl500; }
 
 .footer_mail {
-  margin-top: 30px; }
+  margin-bottom: 10px; }
   .footer_mail a {
     color: #000;
     font-family: MuseoSansCyrl700;
     font-size: 14px;
     text-decoration: underline;
     padding-left: 20px;
-    background: url("../img/top_icon_mail.png") no-repeat left center; }
+    background: url("../img/footer_icon_mail.png") no-repeat left center; }
+
+.col-contacts-footer > div {
+  margin-left: 45px; }
 
 .content .bread {
   width: 100%;
