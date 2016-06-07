@@ -150,6 +150,18 @@ ul {
   font-family: RobotoB;
   src: url(../fonts/roboto-bold.ttf); }
 
+@font-face {
+  font-family: OPenSansEB;
+  src: url(../fonts/OpenSans-ExtraBold.ttf); }
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/roboto-regular.ttf); }
+
+@font-face {
+  font-family: RobotoMI;
+  src: url(../fonts/roboto-medium-italic.ttf); }
+
 .wrapper {
   width: 100%;
   margin: auto;
@@ -583,8 +595,8 @@ li.active:first-child a {
 .white_content {
   background-color: #FFF;
   overflow: hidden;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   padding: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -601,13 +613,13 @@ h1 {
 
 .content h2 {
   color: #2f2f2f;
-  font-family: MuseoSansCyrl700;
-  font-size: 30px;
+  font-family: OpenSans;
+  font-size: 27px;
   margin-bottom: 20px; }
 
 .content h3 {
   color: #2f2f2f;
-  font-family: MuseoSansCyrl700;
+  font-family: OpenSans;
   font-size: 24px;
   margin-bottom: 20px; }
 
@@ -914,51 +926,52 @@ h1 {
 .col-contacts-footer > div {
   margin-left: 45px; }
 
-.content .bread {
+.bread {
   width: 100%;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 12px;
   overflow: hidden;
-  padding-bottom: 3px; }
-  .content .bread li {
+  padding-bottom: 3px;
+  margin-top: -15px; }
+  .bread li {
     float: left;
     font-size: 12px;
-    font-family: MuseoSansCyrl500;
+    font-family: OpenSans;
     margin-bottom: 10px;
     margin: 0;
     padding: 0;
     line-height: 1;
     background: none; }
-    .content .bread li:before {
+    .bread li:before {
       content: ""; }
-    .content .bread li a {
+    .bread li a {
       font-size: 12px;
-      color: black;
+      color: #fff;
       text-decoration: underline; }
-      .content .bread li a:hover {
+      .bread li a:hover {
         text-decoration: none; }
-      .content .bread li a:after {
-        line-height: 0.8;
+      .bread li a:after {
+        line-height: 1.2;
         font-size: 12px;
-        font-family: MuseoSansCyrl500;
-        content: ">";
-        color: #000;
+        font-family: OpenSans;
+        content: "/";
+        color: #fff;
         float: right;
         margin-right: 10px;
         margin-left: 10px;
         display: inline; }
-    .content .bread li span {
-      color: #ff6600; }
+    .bread li span {
+      color: #7abbea; }
 
 .content li {
   margin-bottom: 13px;
   min-height: 20px; }
 
 .content ul li {
-  padding-left: 35px;
-  background: url("../img/def.png") no-repeat left top; }
+  padding-left: 17px;
+  background: url("../img/def.png") no-repeat left center; }
 
 .content ol {
   list-style-type: none;
@@ -966,13 +979,13 @@ h1 {
   .content ol li:before {
     content: counter(num) " ";
     counter-increment: num;
-    color: #ff6600;
-    font-family: MuseoSansCyrl900;
-    font-size: 16px;
+    color: #6eb1e1;
+    font-family: OPenSansEB;
+    font-size: 15px;
     text-align: center;
     display: block;
     float: left;
-    line-height: 1.7;
+    line-height: 1.3;
     margin-right: 10px; }
 
 .lists {
@@ -986,43 +999,80 @@ h1 {
   margin-bottom: 50px;
   overflow: hidden; }
 
+.blockquote {
+  overflow: hidden;
+  width: 100%;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  font-size: 0;
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#215b8b), to(#0d2f48));
+  background-image: -webkit-linear-gradient(bottom, #215b8b 0%, #0d2f48 100%);
+  background-image: linear-gradient(to top, #215b8b 0%, #0d2f48 100%);
+  min-height: 228px;
+  margin-bottom: 20px; }
+
+.blockquote_img {
+  width: 30%;
+  font-size: 0;
+  height: 228px;
+  overflow: hidden; }
+  .blockquote_img img {
+    width: 100%;
+    font-size: 0; }
+
+.blockquote_text {
+  width: 70%; }
+
 blockquote {
-  background-color: #fff;
-  color: #000;
-  font-family: MuseoSansCyrl300;
   font-size: 15px;
   line-height: 21px;
-  padding: 25px 60px;
+  padding: 44px 55px 45px 55px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  font-family: Roboto;
+  color: #FFF; }
   blockquote:before {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 30px;
+    left: 25px;
     line-height: 1;
     background-image: url("../img/left_quote.png"); }
   blockquote b {
     color: #fff;
-    font-family: MuseoSansCyrl500;
+    font-family: RobotoMI;
     font-size: 15px;
-    background-color: #F60;
-    padding: 5px 5px 5px 30px;
+    text-align: right;
+    float: right;
     position: absolute;
-    left: 0;
-    bottom: 0; }
+    bottom: 25px;
+    right: 25px; }
   blockquote:after {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 70px;
+    right: 25px;
     background-image: url("../img/right_quote.png"); }
   blockquote:before, blockquote:after {
-    width: 37px;
-    height: 38px;
+    width: 18px;
+    height: 13px;
     display: block;
     background-repeat: no-repeat;
     background-position: 0 0; }
+
+.blockquote_img {
+  float: left; }
+
+.blockquote_text {
+  float: left; }
+
+.brad {
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  overflow: hidden;
+  max-width: 100%; }
 
 .m0 {
   margin: 0 !important; }
