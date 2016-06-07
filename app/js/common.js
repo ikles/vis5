@@ -1,7 +1,4 @@
 $(function() {
-
-
-
 	$('.slider-arrow').on('click', function() {
 		console.log(glide.current());
 	});
@@ -69,6 +66,29 @@ $(function() {
 			$('.top').after(top_mnu);
 		}
 	});
+
+
 	
+	$('.top_mnu a').mouseover(function(){
+		var a = $(this).parent();
+		var b = a.next("li");	
+		if (b.hasClass("active")) {
+			$(this).addClass('right_none');
+		}
+
+	});
+
+	$('.top_mnu a').mouseover(function(){
+		var a = $(this).parent();
+		var b = a.prev("li");
+		if (b.hasClass("active")) {
+			$(this).addClass('left_none');
+		}
+	});		
+
+	$('.top_mnu a').mouseout(function(){
+		$(this).removeClass('right_none').removeClass('left_none');
+	});
+
 
 });
