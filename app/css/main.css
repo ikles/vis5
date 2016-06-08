@@ -1274,11 +1274,16 @@ blockquote {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .right {
+    margin-bottom: 20px; }
   .top_phone, .top_mail, .top_mail a, .top_adress {
     float: none;
     text-align: center;
     background: none;
     padding: 0; }
+  .top_mail, .top_phone, .top_adress {
+    margin-top: 0;
+    margin-bottom: 10px; }
   .col-soc div {
     text-align: center;
     margin-left: 0; }
@@ -1336,9 +1341,6 @@ blockquote {
     display: none; } }
 
 @media only screen and (max-width: 570px) {
-  .top_mail, .top_phone, .top_adress {
-    margin-top: 0;
-    margin-bottom: 10px; }
   .logo {
     margin-bottom: 10px; }
   .price_table tbody td:nth-child(2n-1), .price_table tbody td:nth-child(2n) {
