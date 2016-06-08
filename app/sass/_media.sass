@@ -2,6 +2,12 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) 
+	.toggle-mnu 
+		margin-right: 0
+
+	.col-contacts-footer 
+		text-align: right		
+
 	.left_widget_vk
 		width: 100%
 		img 
@@ -13,30 +19,19 @@
 	.logo 
 		position: static
 		font-size: 0
-		img 
-			height: 107px
 		
-	.top_slider_wrap 
-		background-color: #f5f5f5 
-		
-
 	.col-mnu 
 		background: none
 	
 	.slider_wrap 
 		border-top: 2px solid #fff
 		
-
-	.gray_line 
-		display: none
-	
 	.tags 
 		position: relative
 		margin-bottom: 15px
 		a 
 			margin-bottom: 10px
-		
-
+	
 	.all_tags 
 		position: absolute
 		right: 0
@@ -75,27 +70,36 @@
 			border: none
 			padding: 10px
 			text-align: right
+			background: none
 			&:hover 
 				text-decoration: underline
+				background: none !important
+				color: #FFF 
 					
 		a:hover, li.active a 
 			border: none
-			
+	
+	li.active:first-child a, li.active:first-child a:hover, li.active:last-child a 
+		background: none !important
+		color: #FFF  !important
+
 	.top_phone 
 		margin-right: 10px
-		float: right
+		//float: right
 		margin-right: 0
 	 
 	.top_mail 
-		float: right
+		//float: right
 		margin-right: 10px
 		min-height: 18px
 		
 	.top_adress 
-		margin-top: 10px
-		float: right
+		//float: right
 		text-align: left
 	
+	.col-top 
+		margin-bottom: 10px
+
 	.col-mnu 
 		float: right !important
 	
@@ -105,8 +109,9 @@
 	.content, .left_mnu, .left_form
 		width: 100%
 			
-	.footer_adress, .footer_phone 
+	.footer_adress, .footer_phone, .footer_mail 
 		margin-left: 0
+		background: none
 		
 	.footer_adress 
 		padding-left: 25px
@@ -188,6 +193,21 @@
 			margin-bottom: 10px !important
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) 	
+	.top_phone, .top_mail, .top_mail a, .top_adress
+		float: none
+		text-align: center
+		background: none
+		padding: 0
+
+	.col-soc div 
+		text-align: center
+		margin-left: 0
+	
+	.footer_adress,	.footer_mail, .footer_mail a, .footer_phone 
+		margin-left: 0 !important
+		padding-left: 0 !important
+		background-image: none
+	
 	.content 
 		img 
 			max-width: 100% 
@@ -217,7 +237,6 @@
 		margin-bottom: 0
 		
 	.top_adress 
-		margin-bottom: 20px
 		padding-left: 0
 		background: none
 		text-align: center
@@ -227,7 +246,6 @@
 		display: block
 		border-radius:  0 0 5px 5px
 		margin: auto
-		margin-top: 10px
 	
 	.left_widget_vk 
 		display: none
@@ -236,16 +254,7 @@
 		margin-top: 20px
 
 	.top_slider_wrap 
-		overflow: hidden
-		background-color: #f5f5f5
 	
-	.col-mnu 
-		position: absolute
-		top: 0
-		right: 0
-		z-index: 100
-		margin-top: 0
-
 	.top_contacts
 		text-align: center
 		> div 
@@ -321,7 +330,7 @@
 	
 @media only screen and (max-width : 400px) 
 	.price_table td 
-		font-size: 11px
+		font-size: 11px !important
 	.slider_text 
 		top: 40px
 @media only screen and (max-width : 360px) 
@@ -331,14 +340,6 @@
 		h2 
 			font-size: 18px
 		
-		.logo 
-			img 
-				width: 100%
-				height: auto
-			
-		
-		
-
 @media only screen and (max-width : 320px) 
 	/**/	
 /*==========  Mobile First Method  ==========*/
